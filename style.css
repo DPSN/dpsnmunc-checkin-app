@@ -1,0 +1,170 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400);
+body {
+    margin: 0%;
+    background-color: #111;
+}
+.header {
+    width: 100%;
+    background-color: #222;
+}
+.header > h1 {
+    font-family: 'Raleway';
+    color: #fff;
+    margin: 5%;
+    margin-bottom: 2%;
+    margin-top: 0%;
+}
+.header > h1 > small {
+    font-size: 50%;
+}
+.header > h1 > sup > #beta {
+    font-size: 60%;
+    background-color: #fff;
+    color: #156;
+    width: 100%;
+    border-radius: 10%;
+}
+.header > h1 > span{
+    font-size: 60%;
+}
+.header > #imageatr {
+    text-align: left;
+}
+.header > #imageatr > img {
+    margin-bottom: 0%;
+    margin-left: 5%;
+}
+.navbar {
+    width: 100%;
+    box-shadow: 0 0 40px rgba(0,0,0,0.9);
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(8%, 8%, 10%, 0.96);
+    font-family: 'Raleway';
+}
+li {
+    float: left;
+}
+li:hover {
+    background-color: #058;
+}
+li > a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 120%;
+}
+.flogolink {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+.flogolink:hover {
+    text-decoration: underline;
+}
+#togglemenu {
+    display: none;
+}
+#togglemenu > #menubutton {
+    text-align: right;
+}
+#togglemenu:hover {
+    background-color: rgba(8%, 8%, 10%, 0.96);
+}
+#menubutton {
+    font-size: 200%;
+    margin: 0%;
+}
+#menubutton > small {
+    font-size: 100%;
+}
+#flogo {
+    display: none;
+    background-color: rgba(8%, 8%, 10%, 0.96);
+}
+#flogo a {
+    color: #fff;
+    text-decoration: none;
+}
+.content1 {
+    background-color: #236;
+    color: #fff;
+    background-attachment: fixed;
+    height: 120%;
+}
+.foot {
+    width: 100%;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    font-family: 'Raleway';
+    height: 120%;
+}
+.foot a {
+    color: #fff;
+}
+.foot a:hover {
+    text-decoration: none;
+}
+.foot > h1 {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: left;
+}
+.foot > p {
+    text-align: left;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.heart {
+    color: #f30;
+    font-family: serif;
+    font-size: 120%;
+}
+.content1 form {
+    margin: 6%;
+    font-size: 160%;
+    font-family: 'Raleway';
+}
+.content1 p {
+    margin: 6%;
+    font-size: 160%;
+    font-family: 'Raleway';
+}
+.button {
+    font-size: 70%;
+    font-family: inherit;
+    border-radius: 5px;
+    background-color: rgba(30%, 30%, 30%, 0.6);
+    color: #fff;
+    border-color: #000;
+}
+
+input[type=text] {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 'Raleway';
+    font-size: 150%;
+    
+}
+input[type=number] {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 'Raleway';
+    font-size: 150%;
+    
+}
