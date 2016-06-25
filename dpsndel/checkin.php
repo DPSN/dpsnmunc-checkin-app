@@ -25,7 +25,7 @@ $institution = htmlspecialchars($_POST['institution']);
 $committee = htmlspecialchars($_POST['committee']);
 $type = 'dpsndel';
 
-$sql = "INSERT INTO `participants` (`name`,`number`,`institution`,`committee`,`type`) VALUES ('$name','$number','$committee','$type');";
+$sql = "INSERT INTO `participants` (`name`,`number`,`institution`,`committee`,`type`) VALUES ('$name','$number','$institution''$committee','$type');";
 if(mysqli_query($db, $sql) == false) {
     die("Form Data Submission Error.");
 }
