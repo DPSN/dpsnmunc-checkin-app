@@ -40,11 +40,12 @@ if(mysqli_query($db, $sql) == false) {
         <meta name="theme-color" content="#336">
     </head>
     <body>
-      <h1>DPSNMUNC'16 Check In Successful</h1>
+      <h1>DPSNMUNC'16 check-in successful!<br>Reciept</h1>
       <ul>
         <li><span>DPS Newtown Delegate</span></li>
         <li><span><?php echo $name; ?></span></li>
         <li><span><?php echo $institution; ?></span></li>
+        <li><span><?php echo $number;?></span></li>
         <li><span><?php echo $number;?></span></li>
       </ul>
       <p>Welcome aboard!</p>
