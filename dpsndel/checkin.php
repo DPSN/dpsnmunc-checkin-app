@@ -30,3 +30,23 @@ if(mysqli_query($db, $sql) == false) {
     die("Form Data Submission Error.");
 }
 ?>
+<!doctype html>
+<html>
+    <head>
+        <title>DPSNMUNC'16 CHECK IN APPLICATION RECIEPT</title>
+        <meta name="viewport" content="width=device-width, user-scalable=yes">
+        <link rel="stylesheet" href="../style2.css" type="text/css" />
+        <link rel="icon" href="http://swghosh.cu.cc/favicon.png" type="image/png" />
+        <meta name="theme-color" content="#336">
+    </head>
+    <body>
+      <h1>DPSNMUNC'16 Check In Successful</h1>
+      <ul>
+        <li><span>DPS Newtown Delegate</span></li>
+        <li><span><?php echo $name; ?></span></li>
+        <li><span><?php echo $institution; ?></span></li>
+        <li><span><?php echo $number;?></span></li>
+      </ul>
+      <p>Welcome aboard!</p>
+    </body>
+</html>

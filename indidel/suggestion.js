@@ -1,2 +1,2 @@
 var names = [];
-$('.name').autocomplete({source: names});
+$('#name').autocomplete({source: names});

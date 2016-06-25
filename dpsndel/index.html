@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, user-scalable=yes">
         <link rel="stylesheet" href="../style.css" type="text/css" />
         <link rel="icon" href="http://swghosh.cu.cc/favicon.png" type="image/png" />
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
         <meta name="theme-color" content="#336">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
     </head>
@@ -30,7 +31,7 @@
             <br>
             <form id="application" method="POST" action="checkin.php">
                 <label for="name">Your name</label><br>
-                <input type="text" name="name"><br><br>
+                <input type="text" name="name" id="name"><br><br>
                 <label for="number">Your contact number</label><br>
                 <input type="number" name="number"><br><br>
                 <input type="hidden" name="institution" value="DPS Newtown">
