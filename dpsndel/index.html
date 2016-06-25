@@ -28,8 +28,22 @@
         </header>
         <div class="content1">
             <br>
-            <form id="applicant-type" method="POST" action="checkin.php">
-                
+            <form id="application" method="POST" action="checkin.php">
+                <label for="name">Your name</label><br>
+                <input type="text" name="name"><br><br>
+                <label for="number">Your contact number</label><br>
+                <input type="number" name="number"><br><br>
+                <input type="hidden" name="institution" value="DPS Newtown">
+                <label for="committee">Committee</label><br>
+                <select>
+                    <option value="general assembly">General Assembly - DISEC</option>
+                    <option value="security council">Security Council</option>
+                    <option value="ecosoc">ECOSOC</option>
+                    <option value="international press">International Press Corps</option>
+                    <option value="coc">Clash of Caricatures</option>
+                    <option value="photo">Photography Videography</option>
+                </select><br><br>
+                <button class="button" type="submit"> check-in </button>
             </form>
             <br>
         </div>
@@ -43,6 +57,6 @@
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><br/><br/>
             </div>
         </footer>
-        <script src="base.js"></script>
+        <script src="../base.js"></script>
     </body>
 </html>
