@@ -14,10 +14,6 @@ if(empty($_POST['name']) || empty($_POST['number']) || empty($_POST['institution
     form_error();
 }
 
-if(strlen($_POST['number']) != 10) {
-    form_error();
-}
-
 //Data Entry into Database
 $name = htmlspecialchars($_POST['name']);
 $number = htmlspecialchars($_POST['number']);
@@ -46,7 +42,7 @@ if(mysqli_query($db, $sql) == false) {
         <li><span><?php echo $name; ?></span></li>
         <li><span><?php echo $institution; ?></span></li>
         <li><span><?php echo $number;?></span></li>
-        <li><span><?php echo $number;?></span></li>
+        <li><span><?php echo $committee;?></span></li>
       </ul>
       <p>Welcome aboard!</p>
     </body>

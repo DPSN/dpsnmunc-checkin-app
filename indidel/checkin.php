@@ -14,10 +14,6 @@ if(empty($_POST['name']) || empty($_POST['number']) || empty($_POST['institution
     form_error();
 }
 
-if(strlen($_POST['number']) != 10) {
-    form_error();
-}
-
 //Data Entry into Database
 $name = htmlspecialchars($_POST['name']);
 $number = htmlspecialchars($_POST['number']);

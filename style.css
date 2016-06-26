@@ -157,7 +157,7 @@ input[type=text] {
     background-color: rgba(0, 0, 0, 0);
     font-family: 'Raleway';
     font-size: 120%;
-    
+
 }
 input[type=number] {
     outline: none;
@@ -165,6 +165,5 @@ input[type=number] {
     border-bottom: 2px solid #fff;
     background-color: rgba(0, 0, 0, 0);
     font-family: 'Raleway';
-    font-size: 120%;
-    
+    font-size: 120%;  
 }
