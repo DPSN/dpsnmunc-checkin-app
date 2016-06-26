@@ -45,5 +45,6 @@ if(mysqli_query($db, $sql) == false) {
         <li><span><?php echo $committee;?></span></li>
       </ul>
       <p>Welcome aboard!</p>
+      <p><small><a href="/">another check-in</a></small></p>
     </body>
 </html>
