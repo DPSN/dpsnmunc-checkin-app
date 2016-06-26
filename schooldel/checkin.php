@@ -30,7 +30,7 @@ $type = 'schooldel';
     <body>
       <h1>DPSNMUNC'16 check-in successful!<br>Reciept</h1>
       <ul>
-        <li><span>DPS Newtown Delegate</span></li>
+        <li><span>School Delegation</span></li>
         <li><span><?php echo $institution; ?></span></li>
         <li><span><?php echo $number; ?></span></li>
         <?php
