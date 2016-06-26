@@ -9,7 +9,8 @@ body {
     background-color: #222;
     background-image: url(images/background.jpg);
     background-size: cover;
-    background-position: fixed;
+    background-position: center;
+    background-attachment: fixed;
     text-align: center;
 }
 .header > h1 {
