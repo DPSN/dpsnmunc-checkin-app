@@ -41,7 +41,7 @@ $type = 'schooldel';
           if(mysqli_query($db, $sql) == false) {
               die("Form Data Submission Error.");
           }
-          echo "<li><span>".$name."</span><li><span>".$committee."</span></li>\n";
+          echo "<li><span>".$name." - ".$committee."</span></li>\n";
         }
         ?>
       </ul>
