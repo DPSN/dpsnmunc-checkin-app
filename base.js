@@ -50,8 +50,9 @@ var showMenu = function () {
     }
     menuView = true;
 };
-if(mobileView) { 
+if(mobileView) {
     hideMenu();
+    document.onscroll = function () {};
 }
 document.querySelector('a#menubutton').onclick = function () {
     if(menuView) {
