@@ -41,7 +41,7 @@ if(mysqli_query($db, $sql) == false) {
         <li><span>DPS Newtown Delegate</span></li>
         <li><span><?php echo $name; ?></span></li>
         <li><span><?php echo $institution; ?></span></li>
-        <li><span><?php echo $number;?></span></li>
+        <li><span>+91 <?php echo $number;?></span></li>
         <li><span><?php echo $committee;?></span></li>
       </ul>
       <p>Welcome aboard!</p>
