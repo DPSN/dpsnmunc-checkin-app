@@ -60,7 +60,7 @@ $cnumber = htmlspecialchars($_POST['cnumber']);
                     <option value=\"coc\">Clash of Caricatures</option>
                     <option value=\"photo\">Photography Videography</option>
                     <option value=\"faculty\">Faculty Advisor</option>
-                </select><br><br><hr>";
+                </select><br><hr><br>";
                 for($i = 1; $i <= $number; $i++) {
                   echo $string."\n";
                 }
