@@ -1,11 +1,29 @@
+<?php
+function form_error() {
+    die(header('Location: ../wrong.html'));
+}
+
+//Form Validation
+if(isset($_POST['institution']) == false || isset($_POST['number']) == false || isset($_POST['cnumber']) == false) {
+    form_error();
+}
+
+if(empty($_POST['institution']) || empty($_POST['number']) || empty($_POST['cnumber'])) {
+    form_error();
+}
+
+$number = intval(htmlspecialchars($_POST['number']));
+$institution = htmlspecialchars($_POST['institution']);
+$cnumber = htmlspecialchars($_POST['cnumber']);
+
+?>
 <!doctype html>
 <html>
     <head>
-        <title>DPSNMUNC'16 CHECK IN APPLICATION | DPS NEWTOWN DELEGATE</title>
+        <title>DPSNMUNC'16 CHECK IN APPLICATION | SCHOOL DELEGATION</title>
         <meta name="viewport" content="width=device-width, user-scalable=yes">
         <link rel="stylesheet" href="../style.css" type="text/css" />
         <link rel="icon" href="http://swghosh.cu.cc/favicon.png" type="image/png" />
-        <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
         <meta name="theme-color" content="#336">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
     </head>
@@ -30,20 +48,25 @@
         <div class="content1">
             <br>
             <form id="application" method="POST" action="checkin.php">
-                <label for="name">Your name</label><br>
-                <input type="text" name="name" id="name" placeholder="full name"><br><br>
-                <label for="number">Your contact number</label><br>
-                +91<input type="number" name="number" placeholder="contact number"><br><br>
-                <input type="hidden" name="institution" value="DPS Newtown">
-                <label for="committee">Committee</label><br>
-                <select name="committee">
-                    <option value="general assembly">General Assembly - DISEC</option>
-                    <option value="security council">Security Council</option>
-                    <option value="ecosoc">ECOSOC</option>
-                    <option value="international press">International Press Corps</option>
-                    <option value="coc">Clash of Caricatures</option>
-                    <option value="photo">Photography Videography</option>
-                </select><br><br>
+                <?php
+                $string = "<label for=\"name\" id=\"name\">Your name</label><br>
+                <input type=\"text\" name=\"name[]\" placeholder=\"full name\"><br><br>
+                <label for=\"committee\">Committee</label><br>
+                <select name=\"committee[]\">
+                    <option value=\"general assembly\">General Assembly - DISEC</option>
+                    <option value=\"security council\">Security Council</option>
+                    <option value=\"ecosoc\">ECOSOC</option>
+                    <option value=\"international press\">International Press Corps</option>
+                    <option value=\"coc\">Clash of Caricatures</option>
+                    <option value=\"photo\">Photography Videography</option>
+                    <option value=\"faculty\">Faculty Advisor</option>
+                </select><br><br>";
+                for($i = 1; $i <= $number; $i++) {
+                  echo $string."\n";
+                }
+                ?>
+                <input type="hidden" name="institution" value="<?php echo $institution; ?>">
+                <input type="hidden" name="number" value="<?php echo $cnumber; ?>">
                 <button class="button" type="submit"> check-in </button>
             </form>
             <br>
