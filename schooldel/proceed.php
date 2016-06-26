@@ -49,8 +49,8 @@ $cnumber = htmlspecialchars($_POST['cnumber']);
             <br>
             <form id="application" method="POST" action="checkin.php">
                 <?php
-                $string = "<label for=\"name\" id=\"name\">Your name</label><br>
-                <input type=\"text\" name=\"name[]\" placeholder=\"full name\"><br><br>
+                $string = "<label for=\"name\" id=\"name\">Name</label><br>
+                <input type=\"text\" name=\"name[]\" placeholder=\"full name\" id=\"name\"><br><br>
                 <label for=\"committee\">Committee</label><br>
                 <select name=\"committee[]\">
                     <option value=\"general assembly\">General Assembly - DISEC</option>
@@ -60,7 +60,7 @@ $cnumber = htmlspecialchars($_POST['cnumber']);
                     <option value=\"coc\">Clash of Caricatures</option>
                     <option value=\"photo\">Photography Videography</option>
                     <option value=\"faculty\">Faculty Advisor</option>
-                </select><br><br>";
+                </select><br><br><hr>";
                 for($i = 1; $i <= $number; $i++) {
                   echo $string."\n";
                 }
