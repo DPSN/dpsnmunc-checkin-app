@@ -1,19 +1,19 @@
 <?php
 include_once("../db.php");
 
-$sql = "SELECT * FROM `checkin`;"
+$sql = "SELECT * FROM `participants`;"
 $res = mysqli_query($db, $sql);
 $number = mysqli_num_rows($res);
 
-$sql = "SELECT * FROM `checkin` WHERE `type` = 'indidel';"
+$sql = "SELECT * FROM `participants` WHERE `type` = 'indidel';"
 $res = mysqli_query($db, $sql);
 $indidel = mysqli_num_rows($res);
 
-$sql = "SELECT * FROM `checkin` WHERE `type` = 'schooldel';"
+$sql = "SELECT * FROM `participants` WHERE `type` = 'schooldel';"
 $res = mysqli_query($db, $sql);
 $schooldel = mysqli_num_rows($res);
 
-$sql = "SELECT * FROM `checkin` WHERE `type` = 'dpsndel';"
+$sql = "SELECT * FROM `participants` WHERE `type` = 'dpsndel';"
 $res = mysqli_query($db, $sql);
 $dpsndel = mysqli_num_rows($res);
 ?>
