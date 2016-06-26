@@ -24,6 +24,7 @@ $cnumber = htmlspecialchars($_POST['cnumber']);
         <meta name="viewport" content="width=device-width, user-scalable=yes">
         <link rel="stylesheet" href="../style.css" type="text/css" />
         <link rel="icon" href="http://swghosh.cu.cc/favicon.png" type="image/png" />
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
         <meta name="theme-color" content="#336">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
     </head>
