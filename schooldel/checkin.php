@@ -28,7 +28,7 @@ $type = 'schooldel';
         <meta name="theme-color" content="#336">
     </head>
     <body>
-      <h1>DPSNMUNC'16 check-in successful!<br>Reciept</h1>
+      <h1>DPSNMUNC'16 check-in successful!<br>Receipt</h1>
       <ul>
         <li><span>School Delegation</span></li>
         <li><span><?php echo $institution; ?></span></li>

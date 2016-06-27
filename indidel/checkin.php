@@ -36,7 +36,7 @@ if(mysqli_query($db, $sql) == false) {
         <meta name="theme-color" content="#336">
     </head>
     <body>
-      <h1>DPSNMUNC'16 check-in successful!<br>Reciept</h1>
+      <h1>DPSNMUNC'16 check-in successful!<br>Receipt</h1>
       <ul>
         <li><span>Individual Applicant</span></li>
         <li><span><?php echo $name; ?></span></li>
