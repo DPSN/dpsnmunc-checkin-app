@@ -20,7 +20,8 @@ if(strpos(strtolower($text), strtolower("#weatherKolkata")) !== false) {
 }
 if(strpos(strtolower($text), strtolower("#footfall")) !== false) {
     $str = file_get_contents('http://checkin.dpsnmunc.in/footfall/json.php');
-    echo $str;
+    $json = json_decode($str);
+    echo $json['total'];
 }
 
 echo "\"}";
