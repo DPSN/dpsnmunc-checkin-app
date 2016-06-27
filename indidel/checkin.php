@@ -29,7 +29,7 @@ if(mysqli_query($db, $sql) == false) {
 <!doctype html>
 <html>
     <head>
-        <title>DPSNMUNC'16 CHECK IN APPLICATION RECIEPT</title>
+        <title>DPSNMUNC'16 CHECK IN APPLICATION RECEIPT</title>
         <meta name="viewport" content="width=device-width, user-scalable=yes">
         <link rel="stylesheet" href="../style2.css" type="text/css" />
         <link rel="icon" href="http://swghosh.cu.cc/favicon.png" type="image/png" />
