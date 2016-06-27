@@ -51,6 +51,5 @@ if(mysqli_query($db, $sql) == false) {
 <?php
 include('../flockincominghook.php');
 $string = "DPSNMUNC'16 CHECK-IN SUCCESSFUL :) Individual Applicant ".$name." ".$number." ".$committee." ".$institution;
-print($string);
 flock_group_post($string);
 ?>
