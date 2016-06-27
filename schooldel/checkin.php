@@ -51,11 +51,11 @@ $type = 'schooldel';
 </html>
 <?php
 include('../flockincominghook.php');
-$string = "DPSNMUNC'16 CHECK-IN SUCCESSFUL :) School Delegation ".$institution." ".$number;
+$string = "DPSNMUNC'16 CHECK-IN SUCCESSFUL\\nSchool Delegation\\n".$institution."\\n".$number."\\n";
 for($i = 0; $i < sizeof($_POST['name']); $i++) {
   $name = $_POST['name'][$i];
   $committee = $_POST['committee'][$i];
-  $string = $string." ".$name." - ".$committee." ";
+  $string = $string." ".$name." - ".$committee."\\n";
 }
 flock_group_post($string);
 ?>

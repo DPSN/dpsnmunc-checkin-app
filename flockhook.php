@@ -20,8 +20,8 @@ if(strpos(strtolower($text), strtolower("#weatherKolkata")) !== false) {
 }
 if(strpos(strtolower($text), strtolower("#footfall")) !== false) {
     $str = file_get_contents('http://checkin.dpsnmunc.in/footfall/json.php');
-    $json = json_decode($str);
-    echo $json['total'];
+    $json = json_decode($str, true);
+    echo "Footfall: ".$json['total']."\\nSchool Delegation: ".$json['schooldel']."\\nIndividual Applicants: ".$json['indidel']."\\nDPS Newtown Delegates: ".$json['dpsndel'];
 }
 
 echo "\"}";

@@ -50,6 +50,6 @@ if(mysqli_query($db, $sql) == false) {
 </html>
 <?php
 include('../flockincominghook.php');
-$string = "DPSNMUNC'16 CHECK-IN SUCCESSFUL :) DPS Newtown Delegate ".$name." ".$number." ".$committee." ";
+$string = "DPSNMUNC'16 CHECK-IN SUCCESSFUL\\nDPS Newtown Delegate ".$name."\\n".$number."\\n".$committee."\\n";
 flock_group_post($string);
 ?>
