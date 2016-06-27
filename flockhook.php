@@ -18,6 +18,10 @@ if(strpos(strtolower($text), strtolower("#weatherKolkata")) !== false) {
     echo "Condition: ".$data['weather'][0]['description']." \\n";
     echo "Humidity: ".$data['main']['humidity']." %\\n";
 }
+if(strpos(strtolower($text), strtolower("#footfall")) !== false) {
+    $str = file_get_contents('http://checkin.dpsnmunc.in/footfall');
+    echo $str;
+}
 
 echo "\"}";
 ?>
