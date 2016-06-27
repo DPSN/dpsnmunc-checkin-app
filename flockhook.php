@@ -19,7 +19,7 @@ if(strpos(strtolower($text), strtolower("#weatherKolkata")) !== false) {
     echo "Humidity: ".$data['main']['humidity']." %\\n";
 }
 if(strpos(strtolower($text), strtolower("#footfall")) !== false) {
-    $str = file_get_contents('http://checkin.dpsnmunc.in/footfall');
+    $str = file_get_contents('http://checkin.dpsnmunc.in/footfall/json.php');
     echo $str;
 }
 
