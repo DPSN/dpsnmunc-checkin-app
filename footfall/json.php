@@ -22,7 +22,7 @@ header('Content-Type: application/json');
 $kext = array('total' => $number,
               'indidel' => $indidel,
               'schooldel' => $schooldel,
-              'dpsndel' => $dpsndel;
+              'dpsndel' => $dpsndel
  );
 
-print(json_encode($kext))
+print(json_encode($kext));
