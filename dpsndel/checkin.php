@@ -48,3 +48,8 @@ if(mysqli_query($db, $sql) == false) {
       <p><small><a href="/">another check-in</a></small></p>
     </body>
 </html>
+<?php
+include_once('../flockincominghook.php');
+$string = "DPSNMUNC'16\nCHECK-IN SUCCESSFUL\nDPS Newtown Delegate\n".$name."\n".$number."\n"$committee."\n";
+flock_group_post($string);
+?>
