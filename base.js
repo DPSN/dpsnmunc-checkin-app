@@ -41,6 +41,7 @@ var hideMenu = function () {
     for(var i = 2; i < li.length; i++) {
         li[i].style.display = 'none';
     }
+    document.querySelector('#flogo').style.display = 'none';
     menuView = false;
 };
 var showMenu = function () {
@@ -48,6 +49,7 @@ var showMenu = function () {
     for(var i = 2; i < li.length; i++) {
         li[i].style.display = 'block';
     }
+    document.querySelector('#flogo').style.display = 'block';
     menuView = true;
 };
 if(mobileView) {
