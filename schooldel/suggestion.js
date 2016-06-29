@@ -4,4 +4,4 @@ for(var i =  0; i < nameInputs.length; i++) {
     $(nameInputs[i]).autocomplete({source: names});
 }
 var schools = ['Delhi Public School Howrah','The Cambridge School','The Newtown School','Don Bosco Liluah','St. James','Apeejay School Park Street','The Future Foundation School','Don Bosco School Park Circus','Sri Sri Academy','La Martiniere for Girls','La Martiniere for Boys','The Heritage School','Delhi Public School Ruby Park','Lakshmipat Singhania Academy'];
-$('#school').autocomplete({source: schools});
+$('#schools').autocomplete({source: schools});
