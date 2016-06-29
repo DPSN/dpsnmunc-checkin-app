@@ -8,17 +8,17 @@ body {
     font-weight: 400px;
 }
 h1 {
-    font-size: 50px;
+    font-size: 30px;
 }
 li {
     color: #0f0;
-    font-size: 40px;
+    font-size: 25px;
 }
 li > span {
     color: #333;
 }
 p > span {
-    font-size: 30px;
+    font-size: 20px;
 }
 footer {
     text-align: center;
